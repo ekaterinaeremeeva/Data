@@ -17,3 +17,34 @@ function task2()
     daysLeft = Math.round((nextDate.getTime() - today.getTime())/msPerDay);
     alert(`До Нового года осталось ${daysLeft} дней`);
 }
+
+function task3()
+{
+    let a = new Date(prompt("Введите дату в формате: год-месяц-число"));
+    function getWeekDayNext(a) {
+        a.setDate(a.getDate()+1);
+        console.log(a)
+        let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+        return days[a.getDay()];
+        }
+    function getWeekDayCurr(a) {
+        a.setDate(a.getDate()-1);
+        console.log(a)
+        let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+        return days[a.getDay()];
+        }  
+    function getWeekDayPrev(a) {
+        a.setDate(a.getDate()-1);
+        console.log(a)
+        let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+        return days[a.getDay()];
+        }    
+    let week = [
+        {
+          next: `${getWeekDayNext(a)}`,
+          curr:  `${getWeekDayCurr(a)}`,
+          prev: `${getWeekDayPrev(a)}`,
+        }];
+    console.log (week);
+    alert ("Ответ указала в console.log");
+}
