@@ -120,3 +120,62 @@ function task7()
         greet = 'Добрый вечер!';
     alert (greet);
 }
+
+function task8()
+{   
+    function getWeekDay(Christmas) {
+        let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+        return days[Christmas.getDay()];
+        }
+    let Christmas = new Date (2023,0,7);
+    alert(`Рождество в этом году в ${getWeekDay(Christmas)}`);
+
+    function getWeekDay(MenDay) {
+        let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+        return days[MenDay.getDay()];
+        }
+    let MenDay = new Date (2023,1,23);
+    alert(`День защитника Отечества в этом году в ${getWeekDay(MenDay)}`);
+
+    function getWeekDay(WomenDay) {
+        let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+        return days[WomenDay.getDay()];
+        }
+    let WomenDay = new Date (2023,2,8);
+    alert(`Международный женский день в этом году в ${getWeekDay(WomenDay)}`);
+
+    function getWeekDay(Spring) {
+        let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+        return days[Spring.getDay()];
+        }
+    let Spring = new Date (2023,4,1);
+    alert(`Праздник весны и труда в этом году в ${getWeekDay(Spring)}`);
+
+    function getWeekDay(may9) {
+        let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+        return days[may9.getDay()];
+        }
+    let may9 = new Date (2023,4,9);
+    alert(`День победы в этом году в ${getWeekDay(may9)}`);
+
+    function getWeekDay(Russia) {
+        let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+        return days[Russia.getDay()];
+        }
+    let Russia = new Date (2023,5,12);
+    alert(`День России в этом году в ${getWeekDay(Russia)}`);
+
+    function getWeekDay(People) {
+        let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+        return days[People.getDay()];
+        }
+    let People = new Date (2023,10,4);
+    alert(`День народного единства в этом году в ${getWeekDay(People)}`);
+
+    function getWeekDay(NY) {
+        let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+        return days[NY.getDay()];
+        }
+        let NY = new Date (2023,11,31);
+    alert(`Новый год в этом году в ${getWeekDay(NY)}`);
+}
